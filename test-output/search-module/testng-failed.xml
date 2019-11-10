@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [search-module]">
+  <test thread-count="5" name="search_1(failed)">
+    <parameter name="keyword" value="java"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="search" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- search_1(failed) -->
+  <test thread-count="5" name="search_2(failed)">
+    <parameter name="keyword" value="qa"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="search" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- search_2(failed) -->
+  <test thread-count="5" name="search_3(failed)">
+    <parameter name="keyword" value="webdriver"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="search" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- search_3(failed) -->
+  <test thread-count="5" name="search_4(failed)">
+    <parameter name="keyword" value="docker"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="search" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- search_4(failed) -->
+  <test thread-count="5" name="search_5(failed)">
+    <parameter name="keyword" value="kubernetes"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="search" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- search_5(failed) -->
+</suite> <!-- Failed suite [search-module] -->
