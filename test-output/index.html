@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">25 methods, 4 failed,   21 passed</span>
+                    <span class="method-stats">25 methods, 5 failed,  4 skipped,  16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -120,7 +120,41 @@
                         <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="flightConfirmationPage">flightConfirmationPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="registrationPageTest">registrationPageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-book-flight-module -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-book-flight-module" class="hide-methods skipped suite-book-flight-module"> (hide)</a> <!-- hide-methods skipped suite-book-flight-module -->
+                      <a href="#" panel-name="suite-book-flight-module" class="show-methods skipped suite-book-flight-module"> (show)</a> <!-- show-methods skipped suite-book-flight-module -->
+                    </span>
+                    <div class="method-list-content skipped suite-book-flight-module">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="findFlightsPage">findFlightsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="flightConfirmationPage">flightConfirmationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="flightDetailsPage">flightDetailsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="registrationConfirmationPage">registrationConfirmationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-book-flight-module -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -151,21 +185,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="findFlightsPage">findFlightsPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="flightConfirmationPage">flightConfirmationPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="flightDetailsPage">flightDetailsPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="flightDetailsPage">flightDetailsPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -202,16 +221,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="registrationConfirmationPage">registrationConfirmationPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="registrationConfirmationPage">registrationConfirmationPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-book-flight-module" title="com.newtours.tests.BookFlightTest" hash-for-method="registrationPageTest">registrationPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -272,7 +281,22 @@
                   <a name="flightConfirmationPage">
                   </a> <!-- flightConfirmationPage -->
                   <span class="method-name">flightConfirmationPage</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [$1173 USD] but found [$1169 USD]
+                  <div class="stack-trace">java.lang.AssertionError: expected [$1172 USD] but found [$1169 USD]
+	at com.newtours.tests.BookFlightTest.flightConfirmationPage(BookFlightTest.java:60)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flightConfirmationPage">
+                  </a> <!-- flightConfirmationPage -->
+                  <span class="method-name">flightConfirmationPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [$1170 USD] but found [$1169 USD]
 	at com.newtours.tests.BookFlightTest.flightConfirmationPage(BookFlightTest.java:60)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
@@ -297,21 +321,17 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//font[contains(text(),&apos;Flight&apos;)]&quot;}
-  (Session info: chrome=70.0.3538.77)
-  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 4.9.125-linuxkit x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+  (Session info: chrome=78.0.3904.87)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;DESKTOP-FCV789S&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43987}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: b70541dfa176bfc3a5ccd7188c5...}
-Session ID: b70541dfa176bfc3a5ccd7188c5fd3f8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.9cjMAA}, goog:chromeOptions: {debuggerAddress: localhost:38941}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 167dce4d231a60a3546ad441b4d...}
+Session ID: 167dce4d231a60a3546ad441b4d413d9
 *** Element info: {Using=xpath, value=//font[contains(text(),&apos;Flight&apos;)]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
@@ -333,21 +353,97 @@ Session ID: b70541dfa176bfc3a5ccd7188c5fd3f8
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="flightConfirmationPage">
-                  </a> <!-- flightConfirmationPage -->
-                  <span class="method-name">flightConfirmationPage</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [$1172 USD] but found [$1169 USD]
-	at com.newtours.tests.BookFlightTest.flightConfirmationPage(BookFlightTest.java:60)
+                  <a name="registrationPageTest">
+                  </a> <!-- registrationPageTest -->
+                  <span class="method-name">registrationPageTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: cannot forward the request unexpected end of stream on Connection{172.17.0.3:40010, proxy=DIRECT hostAddress=/172.17.0.3:40010 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-FCV789S&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.e3Jipl}, goog:chromeOptions: {debuggerAddress: localhost:35229}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: c52e491ad9e3817ade3dc2fc243...}
+Session ID: c52e491ad9e3817ade3dc2fc2438ad05
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.newTours.pages.RegistrationPage.goTo(RegistrationPage.java:40)
+	at com.newtours.tests.BookFlightTest.registrationPageTest(BookFlightTest.java:30)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 22 stack frames
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-book-flight-module-class-failed -->
+          <div class="suite-book-flight-module-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.newtours.tests.BookFlightTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findFlightsPage">
+                  </a> <!-- findFlightsPage -->
+                  <span class="method-name">findFlightsPage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BookFlightTest.findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flightConfirmationPage">
+                  </a> <!-- flightConfirmationPage -->
+                  <span class="method-name">flightConfirmationPage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flightDetailsPage">
+                  </a> <!-- flightDetailsPage -->
+                  <span class="method-name">flightDetailsPage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BookFlightTest.flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationConfirmationPage">
+                  </a> <!-- registrationConfirmationPage -->
+                  <span class="method-name">registrationConfirmationPage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BookFlightTest.registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-book-flight-module-class-skipped -->
           <div class="suite-book-flight-module-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -384,27 +480,6 @@ Session ID: b70541dfa176bfc3a5ccd7188c5fd3f8
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="findFlightsPage">
-                  </a> <!-- findFlightsPage -->
-                  <span class="method-name">findFlightsPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="flightConfirmationPage">
-                  </a> <!-- flightConfirmationPage -->
-                  <span class="method-name">flightConfirmationPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="flightDetailsPage">
-                  </a> <!-- flightDetailsPage -->
-                  <span class="method-name">flightDetailsPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="flightDetailsPage">
                   </a> <!-- flightDetailsPage -->
                   <span class="method-name">flightDetailsPage</span>
@@ -457,20 +532,6 @@ Session ID: b70541dfa176bfc3a5ccd7188c5fd3f8
                   <a name="registrationConfirmationPage">
                   </a> <!-- registrationConfirmationPage -->
                   <span class="method-name">registrationConfirmationPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registrationConfirmationPage">
-                  </a> <!-- registrationConfirmationPage -->
-                  <span class="method-name">registrationConfirmationPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registrationPageTest">
-                  </a> <!-- registrationPageTest -->
-                  <span class="method-name">registrationPageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -601,108 +662,108 @@ data.addRows(25);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'registrationPageTest')
 data.setCell(0, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(0, 3, 70500);
+data.setCell(0, 3, 41681);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'registrationPageTest')
 data.setCell(1, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(1, 3, 66288);
+data.setCell(1, 3, 38581);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'registrationPageTest')
 data.setCell(2, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(2, 3, 66253);
+data.setCell(2, 3, 36738);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'registrationPageTest')
 data.setCell(3, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(3, 3, 66204);
+data.setCell(3, 3, 32974);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'registrationPageTest')
+data.setCell(4, 1, 'flightConfirmationPage')
 data.setCell(4, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(4, 3, 53214);
+data.setCell(4, 3, 30376);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'flightConfirmationPage')
+data.setCell(5, 1, 'findFlightsPage')
 data.setCell(5, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(5, 3, 30201);
+data.setCell(5, 3, 7825);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'findFlightsPage')
+data.setCell(6, 1, 'flightConfirmationPage')
 data.setCell(6, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(6, 3, 7763);
+data.setCell(6, 3, 7657);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'findFlightsPage')
 data.setCell(7, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(7, 3, 4150);
+data.setCell(7, 3, 7406);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'findFlightsPage')
 data.setCell(8, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(8, 3, 4053);
+data.setCell(8, 3, 6862);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'findFlightsPage')
 data.setCell(9, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(9, 3, 3898);
+data.setCell(9, 3, 6630);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'findFlightsPage')
+data.setCell(10, 1, 'flightDetailsPage')
 data.setCell(10, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(10, 3, 2882);
+data.setCell(10, 3, 6015);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'flightDetailsPage')
+data.setCell(11, 1, 'flightConfirmationPage')
 data.setCell(11, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(11, 3, 2407);
+data.setCell(11, 3, 5914);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'registrationConfirmationPage')
+data.setCell(12, 1, 'flightDetailsPage')
 data.setCell(12, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(12, 3, 2392);
+data.setCell(12, 3, 5889);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'flightDetailsPage')
 data.setCell(13, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(13, 3, 2268);
+data.setCell(13, 3, 5332);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'flightDetailsPage')
 data.setCell(14, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(14, 3, 2224);
+data.setCell(14, 3, 4506);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'flightConfirmationPage')
 data.setCell(15, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(15, 3, 2175);
+data.setCell(15, 3, 4281);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'flightDetailsPage')
+data.setCell(16, 1, 'registrationConfirmationPage')
 data.setCell(16, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(16, 3, 2168);
+data.setCell(16, 3, 4108);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'flightConfirmationPage')
+data.setCell(17, 1, 'registrationConfirmationPage')
 data.setCell(17, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(17, 3, 2114);
+data.setCell(17, 3, 4006);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'flightConfirmationPage')
+data.setCell(18, 1, 'registrationConfirmationPage')
 data.setCell(18, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(18, 3, 2106);
+data.setCell(18, 3, 3230);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'registrationConfirmationPage')
 data.setCell(19, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(19, 3, 2006);
+data.setCell(19, 3, 3022);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'registrationConfirmationPage')
+data.setCell(20, 1, 'registrationPageTest')
 data.setCell(20, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(20, 3, 1861);
+data.setCell(20, 3, 2791);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'registrationConfirmationPage')
+data.setCell(21, 1, 'flightConfirmationPage')
 data.setCell(21, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(21, 3, 1684);
+data.setCell(21, 3, 0);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'flightConfirmationPage')
+data.setCell(22, 1, 'registrationConfirmationPage')
 data.setCell(22, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(22, 3, 1505);
+data.setCell(22, 3, 0);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'registrationConfirmationPage')
+data.setCell(23, 1, 'findFlightsPage')
 data.setCell(23, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(23, 3, 1275);
+data.setCell(23, 3, 0);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'flightDetailsPage')
 data.setCell(24, 2, 'com.newtours.tests.BookFlightTest')
-data.setCell(24, 3, 1191);
+data.setCell(24, 3, 0);
 window.suiteTableData['book-flight-module']= { tableData: data, tableDiv: 'times-div-book-flight-module'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-book-flight-module">
               </div> <!-- times-div-book-flight-module -->
             </div> <!-- times-div -->
@@ -730,172 +791,158 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.newtours.tests.BookFlightTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setupDriver</span>
+                <span class="method-name">setupDriver(org.testng.TestRunner@67b92f0a)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <span class="method-name">setupDriver</span>
+                <span class="method-name">setupDriver(org.testng.TestRunner@1f28c152)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <span class="method-name">setupDriver</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-name">setupDriver(org.testng.TestRunner@6325a3ee)</span>
+                <span class="method-start">2 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <span class="method-name">setupDriver</span>
-                <span class="method-start">3 ms</span>
+                <span class="method-name">setupDriver(org.testng.TestRunner@3a5ed7a6)</span>
+                <span class="method-start">4 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <span class="method-name">setupDriver</span>
+                <span class="method-name">setupDriver(org.testng.TestRunner@1d16f93d)</span>
                 <span class="method-start">5 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <span class="method-name">settinUpParameters(2, $1173 USD)</span>
-                <span class="method-start">6916 ms</span>
+                <span class="method-name">settinUpParameters(2, $1171 USD)</span>
+                <span class="method-start">9864 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">registrationPageTest</span>
-                <span class="method-start">6956 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-test before">
-                <span class="method-name">settinUpParameters(2, $1169 USD)</span>
-                <span class="method-start">11220 ms</span>
+                <span class="method-name">settinUpParameters(2, $1173 USD)</span>
+                <span class="method-start">9907 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">registrationPageTest</span>
-                <span class="method-start">11221 ms</span>
+                <span class="method-start">9910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">registrationPageTest</span>
+                <span class="method-start">9910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">12731 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">settinUpParameters(2, $1172 USD)</span>
+                <span class="method-start">36892 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">registrationPageTest</span>
+                <span class="method-start">36893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationConfirmationPage</span>
+                <span class="method-start">48492 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test before">
                 <span class="method-name">settinUpParameters(2, $1170 USD)</span>
-                <span class="method-start">11247 ms</span>
+                <span class="method-start">50256 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">registrationPageTest</span>
-                <span class="method-start">11248 ms</span>
+                <span class="method-start">50258 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test before">
-                <span class="method-name">settinUpParameters(2, $1171 USD)</span>
-                <span class="method-start">11301 ms</span>
+                <span class="method-name">settinUpParameters(2, $1169 USD)</span>
+                <span class="method-start">50373 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">registrationPageTest</span>
-                <span class="method-start">11302 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">registrationConfirmationPage</span>
-                <span class="method-start">77459 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">registrationConfirmationPage</span>
-                <span class="method-start">77459 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">registrationConfirmationPage</span>
-                <span class="method-start">77510 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">registrationConfirmationPage</span>
-                <span class="method-start">77556 ms</span>
+                <span class="method-start">50374 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">flightDetailsPage</span>
-                <span class="method-start">79145 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">flightDetailsPage</span>
-                <span class="method-start">79372 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">flightDetailsPage</span>
-                <span class="method-start">79564 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">flightDetailsPage</span>
-                <span class="method-start">79853 ms</span>
+                <span class="method-start">52501 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">findFlightsPage</span>
-                <span class="method-start">81415 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">findFlightsPage</span>
-                <span class="method-start">81735 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">findFlightsPage</span>
-                <span class="method-start">81780 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">findFlightsPage</span>
-                <span class="method-start">82078 ms</span>
+                <span class="method-start">58391 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">flightConfirmationPage</span>
-                <span class="method-start">85636 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">flightConfirmationPage</span>
-                <span class="method-start">85836 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">flightConfirmationPage</span>
-                <span class="method-start">86230 ms</span>
+                <span class="method-start">65022 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">87753 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">88013 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">88338 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">flightConfirmationPage</span>
-                <span class="method-start">89179 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test before">
-                <span class="method-name">settinUpParameters(2, $1172 USD)</span>
-                <span class="method-start">90155 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">registrationPageTest</span>
-                <span class="method-start">90163 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">119382 ms</span>
+                <span class="method-start">72680 ms</span>
               </div> <!-- configuration-test after -->
               <div class="test-method">
                 <span class="method-name">registrationConfirmationPage</span>
-                <span class="method-start">143382 ms</span>
+                <span class="method-start">78576 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">flightDetailsPage</span>
-                <span class="method-start">144658 ms</span>
+                <span class="method-start">81808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationConfirmationPage</span>
+                <span class="method-start">83236 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightDetailsPage</span>
+                <span class="method-start">86260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationConfirmationPage</span>
+                <span class="method-start">87113 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">findFlightsPage</span>
-                <span class="method-start">145850 ms</span>
+                <span class="method-start">87825 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightDetailsPage</span>
+                <span class="method-start">91222 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findFlightsPage</span>
+                <span class="method-start">91594 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">flightConfirmationPage</span>
-                <span class="method-start">148733 ms</span>
+                <span class="method-start">95232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findFlightsPage</span>
+                <span class="method-start">95730 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">flightConfirmationPage</span>
+                <span class="method-start">98457 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">150240 ms</span>
+                <span class="method-start">101148 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">102740 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">flightConfirmationPage</span>
+                <span class="method-start">103556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">133933 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

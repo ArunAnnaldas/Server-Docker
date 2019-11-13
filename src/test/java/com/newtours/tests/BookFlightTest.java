@@ -25,7 +25,7 @@ public class BookFlightTest extends BaseTest{
 	}
 
 	@Test
-	public void registrationPageTest() {
+	public void registrationPageTest() throws InterruptedException {
 		RegistrationPage regPage = new RegistrationPage(driver);
 		regPage.goTo("http://newtours.demoaut.com/mercuryregister.php?osCsid=e4843d8bcde2bfdbcebfe3002a3871fd");
 		regPage.enterUserDetails("selenium", "docker");

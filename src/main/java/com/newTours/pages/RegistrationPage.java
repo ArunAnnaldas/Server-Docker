@@ -36,8 +36,9 @@ public class RegistrationPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void goTo(String url) {
+	public void goTo(String url) throws InterruptedException {
 		this.driver.get(url);
+		Thread.sleep(20000); // added to interact with VNC when workign with Zalenium
 		this.wait.until(ExpectedConditions.visibilityOf(this.firstNameTxt));
 	}
 	
