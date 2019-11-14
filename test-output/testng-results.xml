@@ -1,491 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="5" ignored="0" total="25" passed="16">
+<testng-results skipped="0" failed="0" ignored="0" total="25" passed="25">
   <reporter-output>
   </reporter-output>
-  <suite name="book-flight-module" duration-ms="134131" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:26:55Z">
+  <suite name="book-flight-module" duration-ms="41725" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:16:06Z">
     <groups>
     </groups>
-    <test name="bookFlight_5" duration-ms="13062" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:24:54Z">
+    <test name="bookFlight_4" duration-ms="41410" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:16:05Z">
       <class name="com.newtours.tests.BookFlightTest">
-        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="setupDriver" is-config="true" duration-ms="9907" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:24:51Z">
+        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="setupDriver" is-config="true" duration-ms="5115" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:15:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1f28c152]]>
+                <![CDATA[org.testng.TestRunner@3632be31]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="settinUpParameters" is-config="true" duration-ms="0" started-at="2019-11-12T05:24:51Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-12T05:24:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[$1173 USD]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- settinUpParameters -->
-        <test-method status="FAIL" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="registrationPageTest" duration-ms="2791" started-at="2019-11-12T05:24:51Z" finished-at="2019-11-12T05:24:54Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[cannot forward the request unexpected end of stream on Connection{172.17.0.3:40010, proxy=DIRECT hostAddress=/172.17.0.3:40010 cipherSuite=none protocol=http/1.1}
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-FCV789S', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.e3Jipl}, goog:chromeOptions: {debuggerAddress: localhost:35229}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: c52e491ad9e3817ade3dc2fc243...}
-Session ID: c52e491ad9e3817ade3dc2fc2438ad05]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: cannot forward the request unexpected end of stream on Connection{172.17.0.3:40010, proxy=DIRECT hostAddress=/172.17.0.3:40010 cipherSuite=none protocol=http/1.1}
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-FCV789S', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.e3Jipl}, goog:chromeOptions: {debuggerAddress: localhost:35229}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: c52e491ad9e3817ade3dc2fc243...}
-Session ID: c52e491ad9e3817ade3dc2fc2438ad05
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at com.newTours.pages.RegistrationPage.goTo(RegistrationPage.java:40)
-at com.newtours.tests.BookFlightTest.registrationPageTest(BookFlightTest.java:30)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationPageTest -->
-        <test-method status="SKIP" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="registrationConfirmationPage" duration-ms="0" started-at="2019-11-12T05:24:54Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-12T05:24:54Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method BookFlightTest.registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationConfirmationPage -->
-        <test-method status="SKIP" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="flightDetailsPage" duration-ms="0" started-at="2019-11-12T05:24:54Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-12T05:24:54Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method BookFlightTest.flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flightDetailsPage -->
-        <test-method status="SKIP" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="findFlightsPage" duration-ms="0" started-at="2019-11-12T05:24:54Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-12T05:24:54Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method BookFlightTest.findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findFlightsPage -->
-        <test-method status="SKIP" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="flightConfirmationPage" duration-ms="0" started-at="2019-11-12T05:24:54Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-12T05:24:54Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flightConfirmationPage -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="quitBrowser" is-config="true" duration-ms="323" started-at="2019-11-12T05:24:54Z" finished-at="2019-11-12T05:24:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.newtours.tests.BookFlightTest -->
-    </test> <!-- bookFlight_5 -->
-    <test name="bookFlight_3" duration-ms="72879" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:25:54Z">
-      <class name="com.newtours.tests.BookFlightTest">
-        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="setupDriver" is-config="true" duration-ms="9859" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:24:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3a5ed7a6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="settinUpParameters" is-config="true" duration-ms="3" started-at="2019-11-12T05:24:51Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-12T05:24:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[$1171 USD]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- settinUpParameters -->
-        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="registrationPageTest" duration-ms="38581" started-at="2019-11-12T05:24:51Z" finished-at="2019-11-12T05:25:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationPageTest -->
-        <test-method status="PASS" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="registrationConfirmationPage" duration-ms="4006" started-at="2019-11-12T05:25:29Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-12T05:25:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationConfirmationPage -->
-        <test-method status="PASS" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="flightDetailsPage" duration-ms="5889" started-at="2019-11-12T05:25:33Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-12T05:25:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flightDetailsPage -->
-        <test-method status="PASS" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="findFlightsPage" duration-ms="6630" started-at="2019-11-12T05:25:39Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-12T05:25:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findFlightsPage -->
-        <test-method status="FAIL" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="flightConfirmationPage" duration-ms="7657" started-at="2019-11-12T05:25:46Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-12T05:25:54Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [$1171 USD] but found [$1169 USD]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [$1171 USD] but found [$1169 USD]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.newtours.tests.BookFlightTest.flightConfirmationPage(BookFlightTest.java:60)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flightConfirmationPage -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="quitBrowser" is-config="true" duration-ms="191" started-at="2019-11-12T05:25:54Z" finished-at="2019-11-12T05:25:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.newtours.tests.BookFlightTest -->
-    </test> <!-- bookFlight_3 -->
-    <test name="bookFlight_4" duration-ms="101338" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:26:22Z">
-      <class name="com.newtours.tests.BookFlightTest">
-        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="setupDriver" is-config="true" duration-ms="36890" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:25:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6325a3ee]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="settinUpParameters" is-config="true" duration-ms="0" started-at="2019-11-12T05:25:18Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-12T05:25:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[$1172 USD]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- settinUpParameters -->
-        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="registrationPageTest" duration-ms="41681" started-at="2019-11-12T05:25:18Z" finished-at="2019-11-12T05:26:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationPageTest -->
-        <test-method status="PASS" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="registrationConfirmationPage" duration-ms="3230" started-at="2019-11-12T05:26:00Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-12T05:26:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationConfirmationPage -->
-        <test-method status="PASS" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="flightDetailsPage" duration-ms="6015" started-at="2019-11-12T05:26:03Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-12T05:26:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flightDetailsPage -->
-        <test-method status="PASS" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="findFlightsPage" duration-ms="7406" started-at="2019-11-12T05:26:09Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-12T05:26:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findFlightsPage -->
-        <test-method status="FAIL" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="flightConfirmationPage" duration-ms="5914" started-at="2019-11-12T05:26:16Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-12T05:26:22Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [$1172 USD] but found [$1169 USD]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [$1172 USD] but found [$1169 USD]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.newtours.tests.BookFlightTest.flightConfirmationPage(BookFlightTest.java:60)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flightConfirmationPage -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="quitBrowser" is-config="true" duration-ms="182" started-at="2019-11-12T05:26:22Z" finished-at="2019-11-12T05:26:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.newtours.tests.BookFlightTest -->
-    </test> <!-- bookFlight_4 -->
-    <test name="bookFlight_2" duration-ms="103121" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:26:24Z">
-      <class name="com.newtours.tests.BookFlightTest">
-        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="setupDriver" is-config="true" duration-ms="50251" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:25:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1d16f93d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="settinUpParameters" is-config="true" duration-ms="1" started-at="2019-11-12T05:25:31Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-12T05:25:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[$1170 USD]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- settinUpParameters -->
-        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="registrationPageTest" duration-ms="32974" started-at="2019-11-12T05:25:31Z" finished-at="2019-11-12T05:26:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationPageTest -->
-        <test-method status="PASS" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="registrationConfirmationPage" duration-ms="3022" started-at="2019-11-12T05:26:04Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-12T05:26:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationConfirmationPage -->
-        <test-method status="PASS" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="flightDetailsPage" duration-ms="5332" started-at="2019-11-12T05:26:07Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-12T05:26:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flightDetailsPage -->
-        <test-method status="PASS" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="findFlightsPage" duration-ms="6862" started-at="2019-11-12T05:26:13Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-12T05:26:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findFlightsPage -->
-        <test-method status="FAIL" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="flightConfirmationPage" duration-ms="4281" started-at="2019-11-12T05:26:19Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-12T05:26:24Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [$1170 USD] but found [$1169 USD]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [$1170 USD] but found [$1169 USD]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.newtours.tests.BookFlightTest.flightConfirmationPage(BookFlightTest.java:60)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flightConfirmationPage -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="quitBrowser" is-config="true" duration-ms="373" started-at="2019-11-12T05:26:24Z" finished-at="2019-11-12T05:26:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.newtours.tests.BookFlightTest -->
-    </test> <!-- bookFlight_2 -->
-    <test name="bookFlight_1" duration-ms="134131" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:26:55Z">
-      <class name="com.newtours.tests.BookFlightTest">
-        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="setupDriver" is-config="true" duration-ms="50373" started-at="2019-11-12T05:24:41Z" finished-at="2019-11-12T05:25:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@67b92f0a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="settinUpParameters" is-config="true" duration-ms="1" started-at="2019-11-12T05:25:31Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-12T05:25:31Z">
+        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="settinUpParameters" is-config="true" duration-ms="1" started-at="2019-11-14T05:15:29Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-14T05:15:29Z">
           <params>
             <param index="0">
               <value>
@@ -501,94 +34,251 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settinUpParameters -->
-        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="registrationPageTest" duration-ms="36738" started-at="2019-11-12T05:25:31Z" finished-at="2019-11-12T05:26:08Z">
+        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="registrationPageTest" duration-ms="27854" started-at="2019-11-14T05:15:29Z" finished-at="2019-11-14T05:15:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPageTest -->
-        <test-method status="PASS" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="registrationConfirmationPage" duration-ms="4108" started-at="2019-11-12T05:26:08Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-12T05:26:12Z">
+        <test-method status="PASS" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="registrationConfirmationPage" duration-ms="1621" started-at="2019-11-14T05:15:57Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-14T05:15:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationConfirmationPage -->
-        <test-method status="PASS" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="flightDetailsPage" duration-ms="4506" started-at="2019-11-12T05:26:12Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-12T05:26:17Z">
+        <test-method status="PASS" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="flightDetailsPage" duration-ms="1266" started-at="2019-11-14T05:15:59Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-14T05:16:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightDetailsPage -->
-        <test-method status="PASS" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="findFlightsPage" duration-ms="7825" started-at="2019-11-12T05:26:17Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-12T05:26:24Z">
+        <test-method status="PASS" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="findFlightsPage" duration-ms="2866" started-at="2019-11-14T05:16:00Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-14T05:16:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlightsPage -->
-        <test-method status="FAIL" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="flightConfirmationPage" duration-ms="30376" started-at="2019-11-12T05:26:24Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-12T05:26:55Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //font[contains(text(),'Flight')]' (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //font[contains(text(),'Flight')]' (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at com.newTours.pages.FlightConfirmationPage.getPrice(FlightConfirmationPage.java:34)
-at com.newtours.tests.BookFlightTest.flightConfirmationPage(BookFlightTest.java:59)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//font[contains(text(),'Flight')]"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-FCV789S', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.9cjMAA}, goog:chromeOptions: {debuggerAddress: localhost:38941}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 167dce4d231a60a3546ad441b4d...}
-Session ID: 167dce4d231a60a3546ad441b4d413d9
-*** Element info: {Using=xpath, value=//font[contains(text(),'Flight')]}
-at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 22 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="flightConfirmationPage" duration-ms="1716" started-at="2019-11-14T05:16:03Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-14T05:16:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightConfirmationPage -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="quitBrowser" is-config="true" duration-ms="189" started-at="2019-11-12T05:26:55Z" finished-at="2019-11-12T05:26:55Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@3fee9989]" name="quitBrowser" is-config="true" duration-ms="954" started-at="2019-11-14T05:16:04Z" finished-at="2019-11-14T05:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </test> <!-- bookFlight_4 -->
+    <test name="bookFlight_2" duration-ms="41438" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:16:05Z">
+      <class name="com.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="setupDriver" is-config="true" duration-ms="4700" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:15:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5abca1e0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="settinUpParameters" is-config="true" duration-ms="3" started-at="2019-11-14T05:15:29Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-14T05:15:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1169 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settinUpParameters -->
+        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="registrationPageTest" duration-ms="28049" started-at="2019-11-14T05:15:29Z" finished-at="2019-11-14T05:15:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationPageTest -->
+        <test-method status="PASS" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="registrationConfirmationPage" duration-ms="1602" started-at="2019-11-14T05:15:57Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-14T05:15:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationPage -->
+        <test-method status="PASS" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="flightDetailsPage" duration-ms="1485" started-at="2019-11-14T05:15:58Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-14T05:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsPage -->
+        <test-method status="PASS" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="findFlightsPage" duration-ms="2961" started-at="2019-11-14T05:16:00Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-14T05:16:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlightsPage -->
+        <test-method status="PASS" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="flightConfirmationPage" duration-ms="1638" started-at="2019-11-14T05:16:03Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-14T05:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationPage -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@f6c48ac]" name="quitBrowser" is-config="true" duration-ms="944" started-at="2019-11-14T05:16:05Z" finished-at="2019-11-14T05:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </test> <!-- bookFlight_2 -->
+    <test name="bookFlight_5" duration-ms="41497" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:16:06Z">
+      <class name="com.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="setupDriver" is-config="true" duration-ms="4703" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:15:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2286778]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="settinUpParameters" is-config="true" duration-ms="3" started-at="2019-11-14T05:15:29Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-14T05:15:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1169 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settinUpParameters -->
+        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="registrationPageTest" duration-ms="27828" started-at="2019-11-14T05:15:29Z" finished-at="2019-11-14T05:15:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationPageTest -->
+        <test-method status="PASS" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="registrationConfirmationPage" duration-ms="1571" started-at="2019-11-14T05:15:57Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-14T05:15:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationPage -->
+        <test-method status="PASS" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="flightDetailsPage" duration-ms="1484" started-at="2019-11-14T05:15:58Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-14T05:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsPage -->
+        <test-method status="PASS" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="findFlightsPage" duration-ms="3297" started-at="2019-11-14T05:16:00Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-14T05:16:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlightsPage -->
+        <test-method status="PASS" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="flightConfirmationPage" duration-ms="1691" started-at="2019-11-14T05:16:03Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-14T05:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationPage -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@3f49dace]" name="quitBrowser" is-config="true" duration-ms="831" started-at="2019-11-14T05:16:05Z" finished-at="2019-11-14T05:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </test> <!-- bookFlight_5 -->
+    <test name="bookFlight_1" duration-ms="41474" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:16:05Z">
+      <class name="com.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="setupDriver" is-config="true" duration-ms="4699" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:15:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4e9ba398]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="settinUpParameters" is-config="true" duration-ms="3" started-at="2019-11-14T05:15:29Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-14T05:15:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1169 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settinUpParameters -->
+        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="registrationPageTest" duration-ms="28355" started-at="2019-11-14T05:15:29Z" finished-at="2019-11-14T05:15:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationPageTest -->
+        <test-method status="PASS" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="registrationConfirmationPage" duration-ms="1423" started-at="2019-11-14T05:15:57Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-14T05:15:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationPage -->
+        <test-method status="PASS" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="flightDetailsPage" duration-ms="1411" started-at="2019-11-14T05:15:59Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-14T05:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsPage -->
+        <test-method status="PASS" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="findFlightsPage" duration-ms="2959" started-at="2019-11-14T05:16:00Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-14T05:16:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlightsPage -->
+        <test-method status="PASS" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="flightConfirmationPage" duration-ms="1680" started-at="2019-11-14T05:16:03Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-14T05:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationPage -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@3532ec19]" name="quitBrowser" is-config="true" duration-ms="890" started-at="2019-11-14T05:16:05Z" finished-at="2019-11-14T05:16:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.newtours.tests.BookFlightTest -->
     </test> <!-- bookFlight_1 -->
+    <test name="bookFlight_3" duration-ms="41725" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:16:06Z">
+      <class name="com.newtours.tests.BookFlightTest">
+        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="setupDriver" is-config="true" duration-ms="4703" started-at="2019-11-14T05:15:24Z" finished-at="2019-11-14T05:15:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d7b4f4c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="settinUpParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="settinUpParameters" is-config="true" duration-ms="3" started-at="2019-11-14T05:15:29Z" depends-on-methods="com.Tests.BaseTest.setupDriver" finished-at="2019-11-14T05:15:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1169 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settinUpParameters -->
+        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="registrationPageTest" duration-ms="27969" started-at="2019-11-14T05:15:29Z" finished-at="2019-11-14T05:15:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationPageTest -->
+        <test-method status="PASS" signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="registrationConfirmationPage" duration-ms="1566" started-at="2019-11-14T05:15:57Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPageTest" finished-at="2019-11-14T05:15:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationPage -->
+        <test-method status="PASS" signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="flightDetailsPage" duration-ms="1722" started-at="2019-11-14T05:15:58Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" finished-at="2019-11-14T05:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDetailsPage -->
+        <test-method status="PASS" signature="findFlightsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="findFlightsPage" duration-ms="3498" started-at="2019-11-14T05:16:00Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" finished-at="2019-11-14T05:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlightsPage -->
+        <test-method status="PASS" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="flightConfirmationPage" duration-ms="1543" started-at="2019-11-14T05:16:04Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightsPage" finished-at="2019-11-14T05:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationPage -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.newtours.tests.BookFlightTest@553f17c]" name="quitBrowser" is-config="true" duration-ms="670" started-at="2019-11-14T05:16:05Z" finished-at="2019-11-14T05:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </test> <!-- bookFlight_3 -->
   </suite> <!-- book-flight-module -->
 </testng-results>

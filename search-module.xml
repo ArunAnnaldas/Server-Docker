@@ -7,25 +7,25 @@
 		</classes>
 	</test>
 	<test name="search_2">
-		<parameter name="keyword" value="qa"/>
+		<parameter name="keyword" value="java"/>
 		<classes>
 			<class name = "com.searchmodule.tests.SearchTest"></class>
 		</classes>
 	</test>
 	<test name="search_3">
-		<parameter name="keyword" value="webdriver"/>
+		<parameter name="keyword" value="java"/>
 		<classes>
 			<class name = "com.searchmodule.tests.SearchTest"></class>
 		</classes>
 	</test>
 	<test name="search_4">
-		<parameter name="keyword" value="docker"/>
+		<parameter name="keyword" value="java"/>
 		<classes>
 			<class name = "com.searchmodule.tests.SearchTest"></class>
 		</classes>
 	</test>
 	<test name="search_5">
-		<parameter name="keyword" value="kubernetes"/>
+		<parameter name="keyword" value="java"/>
 		<classes>
 			<class name = "com.searchmodule.tests.SearchTest"></class>
 		</classes>
