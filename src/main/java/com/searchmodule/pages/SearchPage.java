@@ -41,10 +41,11 @@ public class SearchPage {
 		// driver.manage().window().maximize();
 	}
 
-	public void doSearch(String keywork) {
+	public void doSearch(String keywork) throws InterruptedException {
 		System.out.println("doSearchStarted");
 		this.wait.until(ExpectedConditions.visibilityOf(this.searchTxt));
 		this.searchTxt.sendKeys(keywork);
+		System.out.println("keyword entered");
 		By by = By.xpath("//div[@class='search__autocomplete']//span");
 		this.wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(by, 2));
 		this.autoSuggestion.click();

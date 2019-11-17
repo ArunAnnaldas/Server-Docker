@@ -1,5 +1,7 @@
 FROM openjdk:8u191-jre-alpine
 
+RUN apk add curl jq
+
 #workspace
 WORKDIR /usr/share/workspace
 
@@ -13,7 +15,11 @@ ADD target/libs							libs
 ADD bookFlight-module.xml	bookFlight-module.xml
 ADD search-module.xml		search-module.xml
 
+#ADD health check script
+ADD healthcheck.sh			healthcheck.sh
+
 # BROWSER
 # HUB_HOST
 # MODULE
-ENTRYPOINT java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -DBROWSER=$BROWSER -DHUB_HOST=$HUB_HOST org.testng.TestNG $MODULE
+
+ENTRYPOINT sh healthcheck.sh
