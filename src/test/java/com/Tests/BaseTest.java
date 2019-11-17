@@ -1,10 +1,11 @@
 package com.Tests;
 
 import java.net.MalformedURLException;
+import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -35,12 +36,12 @@ public class BaseTest {
 		String testName=itc.getCurrentXmlTest().getName();
 		dc.setCapability("name", testName);
 		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/exe/chromedriver.exe");
-		this.driver = new ChromeDriver(dc);
+		/*System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/exe/chromedriver.exe");
+		this.driver = new ChromeDriver(dc);*/
 		
 		//run when you are using docker image on your local host machine.
-		/*String completeURL = "http://" + host + ":4444/wd/hub";
-		this.driver=new RemoteWebDriver(new URL(completeURL), dc);*/
+		String completeURL = "http://" + host + ":4444/wd/hub";
+		this.driver=new RemoteWebDriver(new URL(completeURL), dc);
 		
 	}
 
