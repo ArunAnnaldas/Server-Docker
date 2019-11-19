@@ -16,7 +16,7 @@ ADD bookFlight-module.xml	bookFlight-module.xml
 ADD search-module.xml		search-module.xml
 
 #ADD health check script
-ADD healthcheck.sh			healthcheck.sh
+ADD healthcheck1.sh			healthcheck1.sh
 
 # BROWSER
 # HUB_HOST
