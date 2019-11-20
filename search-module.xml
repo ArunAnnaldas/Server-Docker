@@ -12,7 +12,7 @@
 			<class name = "com.searchmodule.tests.SearchTest"></class>
 		</classes>
 	</test>
-	<test name="search_3">
+	<!-- <test name="search_3">
 		<parameter name="keyword" value="java"/>
 		<classes>
 			<class name = "com.searchmodule.tests.SearchTest"></class>
@@ -29,5 +29,5 @@
 		<classes>
 			<class name = "com.searchmodule.tests.SearchTest"></class>
 		</classes>
-	</test>
+	</test> -->
 </suite>
