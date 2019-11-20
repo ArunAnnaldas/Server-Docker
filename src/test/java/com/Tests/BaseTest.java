@@ -32,7 +32,7 @@ public class BaseTest {
 			host = System.getProperty("HUB_HOST");
 		}
 		
-		//Adding the below 2 lines to demonstrate the capability in 
+		//Adding the below 2 lines to demonstrate the capability in Zalenium
 		String testName=itc.getCurrentXmlTest().getName();
 		dc.setCapability("name", testName);
 		
