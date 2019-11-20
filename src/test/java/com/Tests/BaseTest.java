@@ -33,8 +33,8 @@ public class BaseTest {
 		}
 		
 		//Adding the below 2 lines to demonstrate the capability in Zalenium
-		String testName=itc.getCurrentXmlTest().getName();
-		dc.setCapability("name", testName);
+		//String testName=itc.getCurrentXmlTest().getName();
+		//dc.setCapability("name", testName);
 		
 		/*System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/exe/chromedriver.exe");
 		this.driver = new ChromeDriver(dc);*/
