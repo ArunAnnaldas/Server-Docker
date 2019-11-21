@@ -14,5 +14,5 @@ echo "Checking if hub is ready - $HUB_HOST"
 # start the java command
 java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* \
     -DHUB_HOST=172.20.10.5 \
-    -DBROWSER=$BROWSER \
-    org.testng.TestNG $MODULE
+    -DBROWSER=chrome \
+    org.testng.TestNG search-module.xml
