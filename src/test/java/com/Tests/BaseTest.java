@@ -19,6 +19,13 @@ public class BaseTest {
 		
 		String host="localhost";
 		DesiredCapabilities dc;
+		try {
+			System.out.println("Put sleep to wait for hub registration to happen");
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		if(System.getProperty("BROWSER")!=null &&
 				System.getProperty("BROWSER").equalsIgnoreCase("firefox")){
