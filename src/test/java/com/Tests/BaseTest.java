@@ -19,9 +19,10 @@ public class BaseTest {
 		
 		String host="localhost";
 		DesiredCapabilities dc;
+		System.out.println("Put sleep to wait for hub registration to happen");
 		try {
-			System.out.println("Put sleep to wait for hub registration to happen");
-			Thread.sleep(5000);
+			
+			Thread.sleep(20000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
